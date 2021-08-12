@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forgot Password</title>
+	</head>
+	<body>
+		<header id="header" class="header">
+			<div class="container">
+				<center>
+					<h1>Forgot Password</h1>
+				</center>
+			</div>
+		</header>
+		<section id="content" class="content">
+			<div class="container">
+				<!-- Forgot Password -->
+				<!-- logikanya : user memasukkan email yang passwordnya lupa, lalu akan dikirim link ke email tersebut kemudian jika token benar, user akan diarahkan ke halaman reset password -->
+				<!-- input email -->
+				<!-- cek email ada tidak dan is_active harus = 1 -->
+				<!-- jika lolos generate token baru lalu simpan ke db -->
+				<!-- kirim ke email pakai function _sendEmail() yang telah dibuat sebelumnya -->
+				<!-- pengecekan sama seperti validasi tapi tambahi dengan jika ada user yang minta dikirim email lagi padahal telah dikirimi email sebelumnya -->
+				<!-- halaman reset password akan muncul hanya ketika session reset_email dibuat -->
+				<!-- setelah password didataase diupdate jangan lupa unset session userdata("reset_email") agar halaman change password tidak bisa diakses paksa lewat url -->
+				<!-- tambahkan pengecekan untuk halaman changepassword jika tidak ada session userdata("reset_email") maka redirect ke halaman login -->
+			</div>
+		</section>
+	</body>
+</html>
